@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Русская живопись - художники</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- ФОНОВАЯ КАРТИНА ДЛЯ ЭТОЙ СТРАНИЦЫ -->
+  <style>
+    body {
+      background-image: url('back_art.jpg') !important;
+    }
+  </style>
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body class="page">
+  <!-- БЕЗ <div class="bg-paintings"> -->
+
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">Краски истории</div>
+      <nav class="nav-links">
+        <a href="index.html">Эпохи</a>
+        <a href="artists.html" class="active">Художники</a>
+        <a href="masterpieces.html">Скрытые шедевры </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="container">
+      <header class="section-header reveal">
+        <div class="section-kicker">авторы</div>
+        <h1 class="section-title">Мастера русской живописи</h1>
+        <p class="section-sub">
+          Кликните на карточку художника, чтобы увидеть его подробную биографию,
+          творческий путь и основные работы разных периодов.
+        </p>
+      </header>
+
+      <div id="artistsContainer">
+        <!-- заполняется JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Модалка художника -->
+  <div id="artistModal" class="lightbox">
+    <div class="lightbox-content" style="max-width: 900px; overflow-y: auto;">
+      <button class="lightbox-close" aria-label="Закрыть">✕</button>
+      <div id="artistDetail"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Информация о художниках основана на исторических источниках.
+  </footer>
+</body>
+</html>

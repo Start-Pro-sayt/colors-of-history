@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Русская живопись - эпохи, стили, шедевры</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- ФОНОВАЯ КАРТИНА ДЛЯ ЭТОЙ СТРАНИЦЫ -->
+  <style>
+    body {
+      background-image: url('back_ind.jfif') !important;
+    }
+  </style>
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body class="page">
+  <!-- БЕЗ <div class="bg-paintings"> -->
+
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">Краски истории</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Эпохи</a>
+        <a href="artists.html">Художники</a>
+        <a href="masterpieces.html">Скрытые шедевры</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="container">
+      <div class="hero">
+        <div class="reveal">
+          <h1 class="hero-title">
+            <span>Русская живопись</span>
+            <span class="hero-title-accent">от иконы до авангарда</span>
+          </h1>
+          <p class="hero-desc">
+            Путешествие сквозь восемь веков искусства. От иконописных образов
+            к революционным экспериментам авангардистов. Каждая эпоха — свой
+            взгляд на мир, свой язык красок и форм.
+          </p>
+          <div class="hero-meta">
+            <span>XV-XVII века: иконопись</span>
+            <span>XIX век: реализм передвижников</span>
+            <span>XX век: модерн и авангард</span>
+          </div>
+        </div>
+
+		<aside class="hero-card reveal reveal-delay-1">
+ 		 <div class="hero-card-inner">
+   		 <div class="hero-art" style="background-image: url('black_square_ind.jpg'); background-size: cover; background-position: center;">
+    		  <div class="hero-art-frame"></div>
+    		</div>
+   		 <div class="hero-badge">история · живописи</div>
+   		 <div class="hero-chip">
+    		  <span>🖼️</span>
+    	 	 <span>8 веков русской живописи</span>
+   		 </div>
+  		</div>
+		</aside>
+      </div>
+
+      <header class="section-header reveal reveal-delay-1">
+        <div class="section-kicker">история</div>
+        <h2 class="section-title">Направления русской живописи</h2>
+        <p class="section-sub">
+          Кликните на направление, чтобы увидеть галерею картин этого стиля
+          с полной информацией.
+        </p>
+      </header>
+
+      <div class="grid grid-3" id="stylesGrid">
+        <!-- заполняется JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Галерея стиля (модалка) -->
+  <div id="galleryModal" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Закрыть">✕</button>
+      <div id="galleryContainer"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Материал подготовлен  7"И" класса, в рамках проектной дейтельности, на базе ЦПТ "Старт-про".
+  </footer>
+</body>
+</html>
+

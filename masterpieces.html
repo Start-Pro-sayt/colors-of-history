@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Русская живопись - скрытые шедевры</title>
+<link rel="stylesheet" href="styles.css" />
+<!-- ФОНОВАЯ КАРТИНА ДЛЯ ЭТОЙ СТРАНИЦЫ -->
+<style>
+body {
+background-image: url('back_master.jpg') !important;
+}
+</style>
+<script defer src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+
+<body class="page">
+<!-- БЕЗ <div class="bg-paintings"> -->
+
+<header class="nav">
+<div class="nav-inner">
+<div class="logo">Краски истории</div>
+<nav class="nav-links">
+<a href="index.html">Эпохи</a>
+<a href="artists.html">Художники</a>
+<a href="masterpieces.html" class="active">Скрытые шедевры</a>
+</nav>
+</div>
+</header>
+
+<main class="main">
+<section class="container">
+<header class="section-header reveal">
+<div class="section-kicker">сокровища</div>
+<h1 class="section-title">Скрытые шедевры русской живописи</h1>
+<p class="section-sub">
+Восемь недооценённых полотен, которые составляют фундамент русской художественной традиции.
+Клик на картину — полная история о ней.
+</p>
+</header>
+
+<div id="masterpieces" class="grid grid-3">
+<!-- заполняется JS -->
+</div>
+</section>
+</main>
+
+<!-- Lightbox для шедевров -->
+<div id="masterpieceLightbox" class="lightbox">
+<div class="lightbox-content">
+<button class="lightbox-close" aria-label="Закрыть">✕</button>
+<img id="masterpieceImage" src="" alt="" class="lightbox-image" />
+<div class="lightbox-info">
+<h2 class="lightbox-title" id="masterpieceTitle"></h2>
+<p class="lightbox-artist" id="masterpieceArtist"></p>
+<p class="lightbox-meta" id="masterpiece Meta"></p>
+<p id="masterpieceMuseum" style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted);"></p>
+<p id="masterpieceStory" style="margin-top: 0.75rem; font-size: 0.9rem; color: #e8e8e8; max-height: 200px; overflow-y: auto;"></p>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+ Эти шедевры редко упоминаются в популярных обзорах, но составляют золотой фонд русской живописи.
+</footer>
+</body>
+</html>
